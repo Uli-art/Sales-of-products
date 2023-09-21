@@ -1,0 +1,25 @@
+.logo{
+    grid-area: logo;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.buttons{
+    grid-area: buttons;
+}
+
+.profile{
+    grid-area: profile;
+}
+
+.nav{
+    display: grid;
+    grid-template-areas:
+    'logo menu menu buttons profile';
+    grid-area: h;
+   background-color: #cfa9b4;
+    }
+
+   

@@ -1,0 +1,16 @@
+.profile{
+    grid-area: profile;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    'button profile';
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+

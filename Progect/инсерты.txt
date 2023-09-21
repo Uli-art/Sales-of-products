@@ -1,0 +1,83 @@
+INSERT INTO categories
+(Type)
+VALUES
+	('Coctails'),
+	('Tincture'),
+	('Vine'),
+	('Vodka'),
+	('Whiskey'),
+	('Cognac'),
+        ('Beer');
+	
+INSERT INTO coctails
+(ProductName,Image,Volume,categoryId,Price)
+VALUES
+
+	('Mojito','./../../../public/Coctails/Mojito',180,1,12),
+	('Long Island', './../../../public/Coctails/LongIsland',200,1,12),
+	('Blood Mary', './../../../public/Coctails/BloodMary', 180,1,12),
+	('Sex on the Beach','./../../../public/Coctails/SexOnTheBeach',200,1,12),
+	('Cuba Libre', './../../../public/Coctails/CubaLibre', 180,1,12),
+	('Pina Colada', './../../../public/Coctails/PinaColada', 200,1,12),
+	('Blue Lagoon','./../../../public/Coctails/BlueLagoon',180,1,12),
+	('Cosmopolitan','./../../../public/Coctails/Cosmopolitan',200,1,12),
+	('Chocolate','./../../../public/Coctails/Chocolate',50,2,4),
+	('Banana','./../../../public/Coctails/Banana',50,2,4),
+	('Penut','./../../../public/Coctails/Penut',50,2,4),
+	('Strawberry','./../../../public/Coctails/Strawberry',50,2,4),
+	('Watermelon','./../../../public/Coctails/Watermelon',50,2,4),
+	('Kiwi','./../../../public/Coctails/Kiwi',50,2,4),
+	('Apple','./../../../public/Coctails/Apple',50,2,4),
+	('White','./../../../public/Coctails/White',255,3,20),
+	('Red','./../../../public/Coctails/Red',255,3,20),
+	('Pink','./../../../public/Coctails/Pink',255,3,20),
+	('Finlandia','./../../../public/Coctails/Finlandia',50,4,12),
+	('Svayak','./../../../public/Coctails/Svayak',50,4,8),
+	('Jim Beam','./../../../public/Coctails/JimBeam',100,5,19),
+	('Jack Daniels','./../../../public/Coctails/JackDaniels',100,5,22),
+	('Jameson','./../../../public/Coctails/Jameson',100,5,22),
+	('Hennessy','./../../../public/Coctails/Hennessy',100,6,35),
+	('Bud','./../../../public/Coctails/Bud',500,7,6),
+	('Heineken','./../../../public/Coctails/Heineken',500,7,6),
+	('Blanc','./../../../public/Coctails/Blanc',500,7,6);
+
+	
+	INSERT INTO discounts
+(Amount,Des1.Des2,Des3)
+VALUES
+	(1,'Скидка 1 процент','',''),
+	(2,'Скидка 2 процент','',''),
+	(3,'Скидка 3 процент','Возможномть предзаказа за 4 дня',''),
+	(4,'Скидка 4 процент','Возможномть предзаказа за 7 дня','Предзаказ без предоплаты'),
+	(5,'Скидка 5 процент','Возможномть предзаказа за 14 дня','Предзаказ без предоплаты');
+
+
+INSERT INTO places
+(NumberOfPlace,NumberOfSeats,Reserved)
+VALUES
+	(1,4,true),
+	(2,6,true),
+	(3,2,true),
+	(4,4,true),
+	(5,6,true);
+
+INSERT INTO roles
+(RoleName)
+VALUES
+	('Admin'),
+	('Client');
+
+
+
+INSERT INTO parties
+(Name,Description,Image)
+VALUES
+	('Вторник-Повторник','Каждый вторник ваше -  Повторите, за счет завидения','./../../../public/Party/Tuesday'),
+        ('Среда-Тамада','По средам лучшие треки от посетителей','./../../../public/Party/Wednesday'),
+        ('Четверг с Колой','Каждый четверг к любому заказу на 20 рублей литр колы в подарок','./../../../public/Party/Thursday'),
+	('Пятница-Развратница','Каждую пятницу лучшие танцы в нашем заведении','./../../../public/Party/Friday'),
+        ('Суббота без работы','По субботам отдыхаем от работы под лучшие треки','./../../../public/Party/Saturday'),
+        ('Воскресенье день веселья','В восресенье веселимся по полной перед буднями','./../../../public/Party/Sunday');
+
+
+
